@@ -28,6 +28,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        python /data_settings/character_settings.py
+        python /data_settings/connection_settings.py
+        python /data_settings/emotion_settings.py
+        python /data_settings/gacha_settings.py
+        python /data_settings/overdose_settings.py
+        python /data_settings/stock_settings.py
+        python /data_settings/survey_settings.py
+        python /data_settings/word_settings.py
         
         
     - name: Building web app
